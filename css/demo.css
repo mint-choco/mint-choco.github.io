@@ -262,13 +262,13 @@ a:focus {
 
 .grid__item--name {
 	font-size: 7vw;
-	color: #ef3b3b;
-	color: var(--grid-name-text);
+	color: #00ffdd;
+	/*color: var(--grid-name-text);*/
 }
 
 .grid__item--title {
 	font-size: 3.5vh;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 	-webkit-writing-mode: vertical-lr;
 	writing-mode: vertical-lr;
 	text-align: right;
@@ -513,7 +513,7 @@ a:focus {
 		min-height: 0;
 		padding: 1vh 0;
 		text-align: left !important;
-	}	
+	}
 
 	.grid__item--name {
 		grid-row: 1 / -1 !important;
