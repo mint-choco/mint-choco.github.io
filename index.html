@@ -42,9 +42,10 @@
 					<a class="github" href="https://github.com/codrops/GridLayoutSlideshow/">GitHub</a>
 				</header>
 				<nav class="demos">
-					<a class="demo demo--current" href="index.html">Demo 1</a>
-					<a class="demo" href="index2.html">Demo 2</a>
-					<a class="demo" href="index3.html">Demo 3</a>
+					<a class="demo demo--current" href="index.html">Home</a>
+					<a class="demo" href="">About</a>
+					<a class="demo" href="">Works</a>
+					<a class="demo" href="">Blog</a>
 				</nav>
 				<a href="http://go.hackingui.com/DaPulsecodrops180717" rel="nofollow" class="pater">
 					<img class="pater__logo" src="pater/dapulse_logo.svg#black" alt="dapulse Logo" />
@@ -133,7 +134,7 @@
 			const DOM = {};
 			DOM.body = document.body;
 			DOM.gridElems = Array.from(document.querySelectorAll('.grid'));
-			
+
 			imagesLoaded(DOM.body, {background: true} , () => {
 				DOM.body.classList.remove('loading');
 				new Slideshow(DOM.gridElems);
