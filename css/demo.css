@@ -9,17 +9,17 @@ body {
 	--gap: 10px;
 	/* Color scheme */
 	--body-text: #333;
-	--body-bg: #ccd8e4;
+	--body-bg: #012f3c;
 	--link-text: #ef3b3b;
 	--link-text-hover: #333;
 	--grid-name-text: #ef3b3b;
 	--grid-title-text: #ef3b3b;
 	--grid-nav-text: #fff;
-	--grid-nav-bg: #442ef4;
+	--grid-nav-bg: #0B7285;
 	--grid-nav-text-hover: #fff;
 	--grid-nav-bg-hover: #1f1f1f;
 	--grid-text: #333;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-family: 'Ubuntu Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	min-height: 600px;
 	color: #333;
 	color: var(--body-text);
@@ -131,6 +131,11 @@ a:focus {
 
 .frame a {
 	pointer-events: auto;
+    font-size: 24px;
+}
+
+.frame .github {
+    padding-top: 10px;
 }
 
 .message {
@@ -144,6 +149,9 @@ a:focus {
 }
 
 /* Header */
+.frame {
+    vertical-align: middle;
+}
 .codrops-header {
 	position: relative;
 	display: flex;
@@ -167,9 +175,9 @@ a:focus {
 .no-js .codrops-header__title {
 	padding: 1em 0;
 }
-
-.github {
-	margin: 0 0 0 auto;
+.github-Link {
+    margin: 0 0 0 auto;
+    vertical-align: middle;
 }
 
 /* Top Navigation Style */
@@ -256,13 +264,14 @@ a:focus {
 .grid__item--name,
 .grid__item--title {
 	text-transform: uppercase;
-	line-height: 0.8;
-	font-family: 'Kanit', sans-serif;
+	line-height: 1.1;
+	font-family: 'Amatic SC', cursive;
+
 }
 
 .grid__item--name {
-	font-size: 7vw;
-	color: #00ffdd;
+	font-size: 12vw;
+	color: #6FF6EB;
 	/*color: var(--grid-name-text);*/
 }
 
@@ -400,40 +409,17 @@ a:focus {
 .grid--layout-3 .grid__item--nav-next { grid-area: 6 / 18 / 11 / 23; }
 
 /* Demo themes */
-.demo-2 {
-	--gap: 10px;
-    --body-text: #333;
-    --body-bg: #c4f8de;
-    --link-text: #000000;
-    --link-text-hover: #727272;
-    --grid-name-text: #7ed72e;
-    --grid-title-text: #39c283;
-    --grid-nav-text: #000;
-    --grid-nav-bg: #39c283;
-    --grid-nav-text-hover: #ffffff;
-    --grid-nav-bg-hover: #000000;
-    --grid-text: #39c283;
-}
-
-.demo-2 .revealer--hideX,
-.demo-2 .revealer--hideY,
-.demo-2 .revealer--showX,
-.demo-2 .revealer--showY,
-.demo-2 .grid__item--animateOut,
-.demo-2 .grid__item--animateIn {
-	animation-duration: 0.6s;
-}
 
 .demo-3 {
 	--gap: 20px;
     --body-text: #d3d9d9;
-    --body-bg: #252626;
+    --body-bg: #161C1A;
     --link-text: #727676;
     --link-text-hover: #f95422;
     --grid-name-text: #f95422;
     --grid-title-text: #1f2ee0;
     --grid-nav-text: #000;
-    --grid-nav-bg: #fffa3a;
+    --grid-nav-bg: #868E96;
     --grid-nav-text-hover: #fff;
     --grid-nav-bg-hover: #1f2ee0;
     --grid-text: #fff;
