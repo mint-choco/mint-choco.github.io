@@ -265,12 +265,12 @@ a:focus {
 .grid__item--title {
 	text-transform: uppercase;
 	line-height: 1.1;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Josefin Sans', cursive;
 
 }
 
 .grid__item--name {
-	font-size: 12vw;
+	font-size: 5vw;
 	color: #fff;
 	/*color: var(--grid-name-text);*/
 }
