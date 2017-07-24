@@ -19,7 +19,7 @@ body {
 	--grid-nav-text-hover: #fff;
 	--grid-nav-bg-hover: #1f1f1f;
 	--grid-text: #333;
-	font-family: 'Ubuntu Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-family: 'Josefin Sans', 'Roboto Mono', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	min-height: 600px;
 	color: #333;
 	color: var(--body-text);
@@ -131,7 +131,7 @@ a:focus {
 
 .frame a {
 	pointer-events: auto;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .frame .github {
@@ -271,7 +271,7 @@ a:focus {
 
 .grid__item--name {
 	font-size: 12vw;
-	color: #6FF6EB;
+	color: #fff;
 	/*color: var(--grid-name-text);*/
 }
 
@@ -423,6 +423,11 @@ a:focus {
     --grid-nav-text-hover: #fff;
     --grid-nav-bg-hover: #1f2ee0;
     --grid-text: #fff;
+		background-size: 1000px, 600px;
+		background-image: url("../img/mintchoco_background.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+
 }
 
 .demo-3 div.grid__item:not(.grid__item--nav)::after {
