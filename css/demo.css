@@ -23,7 +23,7 @@ body {
 	min-height: 600px;
 	color: #333;
 	color: var(--body-text);
-	background: #ccd8e4;
+	background: #32E2D9;
 	background: var(--body-bg);
 }
 
@@ -103,6 +103,20 @@ a:focus {
 		transform: scale3d(0,1,1);
 		transform-origin: 100% 50%;
 	}
+}
+
+.bg_rect {
+    width: 64vw;
+    height: 32vw;
+    background-image: url(../img/mintchoco_background.jpg);
+    background-position: center center;
+    background-size: 1100px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32vw;
+    margin-top: -16vw;
 }
 
 /* Frame */
@@ -271,7 +285,7 @@ a:focus {
 
 .grid__item--name {
 	font-size: 12vw;
-	color: #fff;
+	color: #2CF0F0;
 	/*color: var(--grid-name-text);*/
 }
 
@@ -413,21 +427,16 @@ a:focus {
 .demo-3 {
 	--gap: 20px;
     --body-text: #d3d9d9;
-    --body-bg: #161C1A;
+    --body-bg: #e08030;
     --link-text: #727676;
     --link-text-hover: #f95422;
     --grid-name-text: #f95422;
     --grid-title-text: #1f2ee0;
     --grid-nav-text: #000;
-    --grid-nav-bg: #868E96;
+    --grid-nav-bg: #fff;
     --grid-nav-text-hover: #fff;
     --grid-nav-bg-hover: #1f2ee0;
-    --grid-text: #fff;
-		background-size: 1000px, 600px;
-		background-image: url("../img/mintchoco_background.jpg");
-		background-repeat: no-repeat;
-		background-position: center center;
-
+    --grid-text: #2BC9CA;
 }
 
 .demo-3 div.grid__item:not(.grid__item--nav)::after {
