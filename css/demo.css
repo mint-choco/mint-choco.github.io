@@ -412,17 +412,17 @@ a:focus {
 
 .demo-3 {
 	--gap: 20px;
-    --body-text: #d3d9d9;
-    --body-bg: #161C1A;
-    --link-text: #727676;
+    --body-text: #495057;
+    --body-bg: #e0dfdf;
+    --link-text: #495057;
     --link-text-hover: #f95422;
     --grid-name-text: #f95422;
     --grid-title-text: #1f2ee0;
     --grid-nav-text: #000;
-    --grid-nav-bg: #868E96;
+    --grid-nav-bg: #ffeed9;
     --grid-nav-text-hover: #fff;
     --grid-nav-bg-hover: #1f2ee0;
-    --grid-text: #fff;
+    --grid-text: #495057;
 		background-size: 1000px, 600px;
 		background-image: url("../img/mintchoco_background.jpg");
 		background-repeat: no-repeat;
