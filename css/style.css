@@ -300,7 +300,7 @@ a:focus {
 }
 
 .grid__item--text {
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.2;
 	display: flex;
 	color: inherit;
@@ -376,7 +376,7 @@ a:focus {
 .grid--layout-1 .grid__item:nth-child(13) { grid-area: 17 / 26 / 22 / 28; background-image: url(../img/5.jpg); }
 .grid--layout-1 .grid__item--name { grid-area: 10 / 12 / 30 / 25; }
 .grid--layout-1 .grid__item--title { grid-area: 1 / 27 / 11 / 29; }
-.grid--layout-1 .grid__item--text { grid-area: 23 / 23 / 30 / 30; }
+.grid--layout-1 .grid__item--text { grid-area: 23 / 23 / 30 / 32; }
 .grid--layout-1 .grid__item--nav-prev { grid-area: 3 / 6 / 8 / 11; }
 .grid--layout-1 .grid__item--nav-next { grid-area: 24 / 15 / 29 / 20; }
 
