@@ -164,7 +164,7 @@ a:focus {
 .frame {
     vertical-align: middle;
 }
-.codrops-header {
+.header-github {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -190,23 +190,6 @@ a:focus {
 .github-Link {
     margin: 0 0 0 auto;
     vertical-align: middle;
-}
-
-/* Top Navigation Style */
-.codrops-links {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 0.5em 0 0;
-	text-align: center;
-	white-space: nowrap;
-}
-
-.codrops-icon {
-	display: inline-block;
-	margin: 0 0.25em;
-	padding: 0 0.25em;
 }
 
 /* Demos */
@@ -370,7 +353,7 @@ a:focus {
 .grid--layout-1 .grid__item:nth-child(8) { grid-area: 17 / 24 / 28 / 20; background-image: url(../img/22.jpg); }
 .grid--layout-1 .grid__item--name { grid-area: 11 / 15 / 30 / 25; }
 .grid--layout-1 .grid__item--title { grid-area: 1 / 4 / 26 / 29; }
-.grid--layout-1 .grid__item--text { grid-area: 23 / 23 / 30 / 32; }
+.grid--layout-1 .grid__item--text { grid-area: 25 / 23 / 30 / 32; }
 .grid--layout-1 .grid__item--nav-prev { grid-area: 4 / 10 / 8 / 15; }
 .grid--layout-1 .grid__item--nav-next { grid-area: 24 / 15 / 29 / 20; }
 
@@ -420,7 +403,7 @@ a:focus {
 	--gap: 20px;
     --body-text: #495057;
     --body-bg: #060e33;
-    --link-text: #495057;
+    --link-text: #F8F9FA;
     --link-text-hover: #f95422;
     --grid-name-text: #f95422;
     --grid-title-text: #495057;
@@ -428,7 +411,7 @@ a:focus {
     --grid-nav-bg: #ADB5BD;
     --grid-nav-text-hover: #FA5252;
     --grid-nav-bg-hover: #3BC9DB;
-    --grid-text: #343A40;
+    --grid-text: #00bfb7;
 }
 
 .demo-3 div.grid__item:not(.grid__item--nav)::after {
@@ -446,6 +429,17 @@ a:focus {
 }
 
 .demo-3 div.grid__item1:not(.grid__item--nav)::after {
+    content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #38D9A9;
+	mix-blend-mode: exclusion;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s;
     border-radius: 50%;
 }
 
