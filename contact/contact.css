@@ -41,7 +41,7 @@
 	position: absolute;
 	bottom: 2em;
 	left: 0;
-	width: 100%;
+	width: 297px;
 	background: #000;
 	transition: transform 0.5s 0.1s;
 	transform: translate3d(0,100%,0) translate3d(0,2em,0);
