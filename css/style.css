@@ -348,14 +348,13 @@ a:focus {
 }
 
 /* Layout 1 */
-.grid--layout-1 .grid__item:first-child { grid-area: 22 / 6 / 28 / 10; background-image: url(../img/4.jpg); }
-.grid--layout-1 .grid__item:nth-child(2) { grid-area: 8 / 5 / 22 / 15; background-image: url(../img/1.jpg); border-radius: 50%; }
-.grid--layout-1 .grid__item:nth-child(3) { grid-area: 22 / 10 / 29 / 15; background-image: url(../img/8.jpg); }
-.grid--layout-1 .grid__item:nth-child(4) { grid-area: 17 / 15 / 24 / 20; background-image: url(../img/3.jpg); }
-.grid--layout-1 .grid__item:nth-child(5) { grid-area: 11 / 15 / 3 / 23; background-image: url(../img/6.jpg); }
-.grid--layout-1 .grid__item:nth-child(6) { grid-area: 17 / 24 / 22 / 29; background-image: url(../img/18.jpg); border-radius: 50%; }
-.grid--layout-1 .grid__item:nth-child(7) { grid-area: 4 / 28 / 17 / 23; background-image: url(../img/20.jpg); }
-.grid--layout-1 .grid__item:nth-child(8) { grid-area: 17 / 24 / 28 / 20; background-image: url(../img/22.jpg); }
+.grid--layout-1 .grid__item:first-child { grid-area: 8 / 5 / 22 / 15; background-image: url(../img/1.jpg); border-radius: 50%; cursor: pointer;}
+.grid--layout-1 .grid__item:nth-child(2) { grid-area: 22 / 6 / 30 / 15; background-image: url(../img/2.jpg); cursor: pointer;}
+.grid--layout-1 .grid__item:nth-child(3) { grid-area: 17 / 15 / 24 / 20; background-image: url(../img/3.jpg); cursor: pointer;}
+.grid--layout-1 .grid__item:nth-child(4) { grid-area: 11 / 15 / 3 / 23; background-image: url(../img/6.jpg); cursor: pointer;}
+.grid--layout-1 .grid__item:nth-child(5) { grid-area: 16 / 24 / 22 / 30; background-image: url(../img/18.jpg); border-radius: 50%; cursor: pointer;}
+.grid--layout-1 .grid__item:nth-child(6) { grid-area: 4 / 30 / 15 / 23; background-image: url(../img/7.jpg); cursor: pointer;}
+.grid--layout-1 .grid__item:nth-child(7) { grid-area: 17 / 24 / 28 / 20; background-image: url(../img/22.jpg); }
 .grid--layout-1 .grid__item--name { grid-area: 11 / 15 / 30 / 25; }
 .grid--layout-1 .grid__item--title { grid-area: 1 / 4 / 26 / 29; }
 .grid--layout-1 .grid__item--text { grid-area: 25 / 23 / 30 / 32; }
@@ -415,41 +414,57 @@ a:focus {
     --grid-nav-text: #000;
     --grid-nav-bg: #ADB5BD;
     --grid-nav-text-hover: #FA5252;
-    --grid-nav-bg-hover: #3BC9DB;
+    --grid-nav-bg-hover: #38D9A9;
     --grid-text: #00bfb7;
 }
 
 .demo-3 div.grid__item:not(.grid__item--nav)::after {
-	content: '';
+    padding-top: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #38D9A9;
-	mix-blend-mode: exclusion;
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity 0.3s;
 }
 
-.demo-3 div.grid__item1:not(.grid__item--nav)::after {
-    content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: #38D9A9;
-	mix-blend-mode: exclusion;
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.3s;
-    border-radius: 50%;
-}
 
 .demo-3 .grid:not(.grid--animating) div.grid__item:not(.grid__item--nav):hover::after {
 	opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: rgba(56, 217, 169, 0.8);
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.demo-3 div.grid__item:hover .overlay {
+  height: 15%;
+  
+}
+
+.text {
+  white-space: nowrap; 
+  color: #F8F9FA;
+  font-size: 18px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 60em) {
