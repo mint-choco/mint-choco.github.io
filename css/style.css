@@ -759,6 +759,8 @@ a:focus {
     
     .message {
 		display: block;
+        line-height: 1.3em;
+        padding: 10px 0 5px 0;
 	}
 	.frame {
 		display: block;
@@ -784,6 +786,7 @@ a:focus {
 	.demos {
 		padding: 1em 0 0;
         text-align: center;
+        left: 9em;
 	}
 	.demo {
 		margin: 0 0.5em;
