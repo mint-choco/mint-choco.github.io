@@ -10,9 +10,9 @@ body {
 	--gap: 10px;
 	/* Color scheme */
 	--body-text: #333;
-	--body-bg: #012f3c;
-	--link-text: #ef3b3b;
-	--link-text-hover: #333;
+	--body-bg: #060e33;
+	--link-text: #ffffff;
+	--link-text-hover: #ef3b3b;
 	--grid-name-text: #ef3b3b;
 	--grid-title-text: #ef3b3b;
 	--grid-nav-text: #fff;
@@ -469,7 +469,7 @@ a:focus {
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -153px;
+    margin-left: -176px;
     margin-top: -8px;
 }
 
@@ -477,12 +477,6 @@ a:focus {
 	margin: 0 0 0 2em;
     display: inline-block;
 	position: relative;
-}
-
-.demo--current {
-	color: #333;
-	color: var(--link-text-hover);
-    border-color: currentColor;
 }
 
 .demo .decoshape {
@@ -836,6 +830,68 @@ a:focus {
 .container:after {
     clear: both
 }
+
+.waiting_js body {
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+
+.waiting_js body.render {
+	opacity: 1;
+}
+
+.waiting_demo-2 {
+    --color-title: #fff;
+}
+
+.waiting__title {
+	font-size: 7vw;
+	font-weight: 700;
+	color: var(--color-title);
+	text-align: center;
+	margin: 0;
+}
+
+.waiting__subtitle {
+	color: var(--color-title);
+	padding: 0 0.75em;
+	margin-top: 3em;
+	text-indent: 0.5em;
+	font-weight: 500;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.waiting_content {
+	position: relative;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin: 0 auto;
+	min-height: 100vh;
+}
+
+.waiting_content__inner {
+	grid-area: 1 / 1 / 1 / 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.scene {
+	position: absolute;
+}
+
+.scene--full {
+	width: 100%;
+	height: 100vh;
+}
+
+
 @media (min-width:768px) {		
     .container {		
          width: 750px		
@@ -1033,6 +1089,17 @@ a:focus {
     }
     .content--layout-4 .content__desc {
         margin-left: -156px;
+    }
+    .waiting__title {
+		font-size: 2em;
+	}
+	.waiting__subtitle {
+		font-size: 0.85em;
+	}
+    .waiting_content {
+		flex-direction: column;
+		height: auto;
+	}
 }
 @media screen and (max-width: 40em) {
 	.content--layout {

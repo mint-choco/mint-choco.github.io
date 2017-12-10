@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MintChoco Please Waiting</title>
+		<meta name="description" content="MintChoco Design Artwork" />
+		<meta name="keywords" content="MintChoco, Design, Artwork, Love, Minji, Junhee, Portfolio" />
+		<meta name="author" content="MintChoco" />
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/16mintchoco_logo.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/32mintchoco_logo_doughnut.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/96mintchoco_logo.png">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="contact/contact.css" />
+		<script>document.documentElement.className="waiting_js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="waiting_demo-2">
+		<svg class="hidden">
+			<symbol id="icon-keyboard" viewBox="0 0 100 70">
+				<title>keyboard</title>
+				<!-- https://thenounproject.com/term/keyboard/783/ by Paul te Kortschot from the Noun Project -->
+				<path d="M 60.94,1.83 39.22,1.83 C 36.71,1.83 34.67,3.86 34.67,6.376 L 34.67,28.1 C 34.67,30.61 36.71,32.65 39.22,32.65 L 60.94,32.65 C 63.45,32.65 65.5,30.61 65.5,28.1 L 65.5,6.376 C 65.5,3.86 63.45,1.83 60.94,1.83 Z M 44.79,18.63 50.08,11.74 55.37,18.63 Z" opacity="0.2"/>
+				<path d="M 60.86,36.75 39.14,36.75 C 36.63,36.75 34.59,38.79 34.59,41.3 L 34.59,63.02 C 34.59,65.53 36.63,67.57 39.14,67.57 L 60.86,67.57 C 63.38,67.57 65.41,65.53 65.41,63.02 L 65.41,41.3 C 65.42,38.79 63.38,36.75 60.86,36.75 Z M 50.08,57.45 44.79,50.55 55.37,50.55 Z" opacity="0.2" />
+				<path d="M 95.45,36.75 73.73,36.75 C 71.22,36.75 69.18,38.79 69.18,41.3 L 69.18,63.02 C 69.18,65.53 71.22,67.57 73.73,67.57 L 95.45,67.57 C 97.97,67.57 100,65.53 100,63.02 L 100,41.3 C 100,38.79 97.97,36.75 95.45,36.75 Z M 83.4,57.45 83.4,46.86 90.3,52.16 Z" />
+				<path d="M 26.27,36.75 4.55,36.75 C 2.037,36.75 0,38.79 0,41.3 L 0,63.02 C 0,65.53 2.037,67.57 4.55,67.57 L 26.27,67.57 C 28.78,67.57 30.82,65.53 30.82,63.02 L 30.82,41.3 C 30.82,38.79 28.78,36.75 26.27,36.75 Z M 16.69,57.45 9.79,52.16 16.69,46.86 Z" />
+			</symbol>
+		</svg>
+		<main>
+        <div class="message">Please view this website on a desktop.<br>Thank you.</div>
+        <div class="frame">
+            <header class="header-github">
+                <!--<div class="github-Link">
+                        <i><a href="href="https://github.com/mint-choco/mint-choco.github.io/tree/master><img src="img/mark-github.png" alt="github_icon"></a></i>
+					    <a class="github" href="https://github.com/mint-choco/mint-choco.github.io/tree/master">GitHub</a>
+				    </div>-->
+                <nav class="demos">
+                    <a class="demo" href="index.html">Home</a>
+                    <a class="demo" href="about.html">About</a>
+                    <a class="demo" href="works.html">Works</a>
+                    <a class="demo" href="waiting.html">Blog</a>
+                </nav>
+            </header>
+
+            <a href="mailto:junheee.p@gmail.com" rel="nofollow" class="contact">
+                <img class="contact__logo" src="contact/contact_logo_mint.svg" alt="contact" />
+                <div class="contact__img-wrap">
+                    <img class="contact__img" src="contact/contact.jpg" alt="contactUs" />
+                </div>
+            </a>
+        </div>
+			<div class="waiting_content">
+				<canvas class="scene scene--full" id="scene"></canvas>
+				<script type="x-shader/x-vertex" id="wrapVertexShader">
+					#define PI 3.1415926535897932384626433832795
+					attribute float size;
+					void main() {
+						vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+						gl_PointSize = 5.0;
+						gl_Position = projectionMatrix * mvPosition;
+					}
+				</script>
+				<script type="x-shader/x-fragment" id="wrapFragmentShader">
+					uniform sampler2D texture;
+					void main(){
+						vec4 textureColor = texture2D( texture, gl_PointCoord );
+						if ( textureColor.a < 0.5 ) discard;
+						vec4 dotColor = vec4(0.06, 0.18, 0.36, 0.4);
+						vec4 color = dotColor * textureColor;
+						gl_FragColor = color;
+					}
+				</script>
+				<div class="waiting_content__inner">
+					<h2 class="waiting__title">Oooops!</h2>
+					<h3 class="waiting__subtitle">It looks like you're lost..<br>We are constantly updating our homepage. Please wait. Thank you!!</h3>
+				</div>
+			</div>
+		</main>
+		<script src="js/three.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/waiting_1.js"></script>
+		<script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-110022099-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+	</body>
+</html>
