@@ -221,14 +221,7 @@
 				window.addEventListener('resize', (ev) => debounce(this.onresize()));
 			}
 		}
-		onmousemove(ev) {
-			requestAnimationFrame(() => {
-				const mousepos = getMousePos(ev);
-				const transX = 2*this.CONFIG.tilt.maxTranslationX/win.width*mousepos.x - this.CONFIG.tilt.maxTranslationX;
-				const transY = 2*this.CONFIG.tilt.maxTranslationY/win.height*mousepos.y - this.CONFIG.tilt.maxTranslationY;
-				this.grids[this.current].tilt({translateX: transX, translateY: transY});
-			});	
-		}
+	
 		onresize(ev) {
 			win = {width: window.innerWidth, height: window.innerHeight};
 			center = {x: win.width/2, y: win.height/2};
