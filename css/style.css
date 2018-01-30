@@ -1172,9 +1172,15 @@ a:focus {
     position: relative
 }
 
+.works_background-image-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
 @media (min-width:992px) {
     .works_hero-full-container {
-        border: 70px solid #fff
+        border: 70px solid #060e33
     }
 }
 
@@ -1268,6 +1274,67 @@ a:focus {
     font-size: 4em;
     color: #e4ca3c;
 }
+
+.works_section-container {
+    padding: 80px 0
+}
+
+.text-center {
+    text-align: center
+}
+
+.works_section-container-spacer {
+    margin-bottom: 60px
+}
+
+.h2.with-project-number,
+h2.with-project-number {
+    position: relative;
+    z-index: 1
+}
+
+.h2.with-project-number .project-number,
+h2.with-project-number .project-number {
+    top: -5rem
+}
+
+.project-number {
+    color: #e6e6e6;
+    font-size: 3em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    z-index: -1;
+    font-weight: 300
+}
+
+.project-nav {
+    position: relative;
+    z-index: 1
+}
+
+.project-nav,
+.project-nav .project-number {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.project-nav .project-number {
+    font-size: 5em
+}
+
+.project-nav:hover .project-number {
+    color: #ccc
+}
+
+@media (min-width:768px) {
+    .project-nav.left .project-number {
+        margin-left: -4rem
+    }
+}
+
 
 @media screen and (max-width: 60em) {
     .content__desc {
