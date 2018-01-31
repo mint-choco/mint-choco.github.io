@@ -1249,13 +1249,41 @@ a:focus {
     clear: both
 }
 
-.col-xs-12 {
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+.img-responsive {
+    margin-bottom: 10px
+}
+
+.col-md-6, .col-md-8, .col-md-4, .col-xs-12 {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
-    padding-right: 15px;
-    float: left;
-    width: 100%;
+    padding-right: 15px;   
+}
+
+.col-md-6, .col-md-8, .col-md-4, .col-xs-12 {
+    float: left;   
+}
+
+.col-xs-12 {
+    width: 100%;     
+}
+
+.col-md-4 {
+    width: 33.33333%
+}
+
+.col-md-6 {
+    width: 50%
+}
+
+.col-md-8 {
+    width: 66.66667%
 }
 
 .hero-full-container .hero-full-wrapper {
@@ -1327,6 +1355,110 @@ h2.with-project-number .project-number {
 
 .project-nav:hover .project-number {
     color: #ccc
+}
+
+.works_section-container {
+    padding: 80px 0
+}
+
+.section-container-spacer {
+    margin-bottom: 60px
+}
+
+.list-inline,
+.list-unstyled {
+    padding-left: 0;
+    list-style: none
+}
+
+blockquote.large-spacing {
+    padding: 60px 0
+}
+
+.blockquote-reverse,
+blockquote.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid #eee;
+    border-left: 0;
+    text-align: right
+}
+
+.dropdown-menu.pull-right {
+    right: 0;
+    left: auto
+}
+
+.pull-right {
+    float: right!important
+}
+
+.navbar {
+    display: none
+}
+
+.navbar {
+    position: relative;
+    min-height: 70px;
+    margin-bottom: 32px;
+    border: 1px solid transparent
+}
+
+.navbar:after,
+.navbar:before {
+    content: " ";
+    display: table
+}
+
+.navbar:after {
+    clear: both
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #eee
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+        border-radius: 0
+}
+
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0
+}
+
+@media (min-width:768px) {
+    .navbar {
+        border-radius: 0
+    }
+}
+
+.navbar {
+    margin-bottom: 0
+}
+
+.navbar-nav {
+    margin: 9.5px -15px
+}
+
+.navbar-nav {
+    float: left;
+    margin: 0
+}
+
+.navbar-fixed-bottom .navbar-nav {
+    float: left
 }
 
 @media (min-width:768px) {
