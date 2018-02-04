@@ -1254,6 +1254,23 @@ a:focus {
 .text-center {
     text-align: center
 }
+.works_body-text {
+    line-height: 24px;    
+}
+
+.works_section-container {
+    padding: 20px 0;
+}
+
+.works_section-container h3{
+    font-size: 24px;
+    line-height: 32px;
+    color: #DEE2E6;
+}
+
+.works_section-container p{
+    color: #ADB5BD;
+}
 
 .works_section-container-spacer {
     margin-bottom: 60px
@@ -1334,6 +1351,7 @@ blockquote.pull-right {
     float: right!important
 }
 
+/* worksBelow */
 
 .navbar {
     position: relative;
@@ -1393,17 +1411,24 @@ blockquote.pull-right {
     list-style: none
 }
 
-.nav:after,
-.nav:before {
-    content: " ";
-    display: table
+.navbar-default .navbar-nav>li>a {
+    color: #777;
 }
 
-.nav:after {
-    clear: both
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 32px;
 }
 
-/* worksBelow */
+.nav>li>a {
+    padding: 10px 15px;
+}
+main.scss:186
+.nav>li, .nav>li>a {
+    position: relative;
+    display: block;
+}
 
 .works_hero-full-container {
     height: 100vh;
@@ -1440,12 +1465,11 @@ blockquote.pull-right {
     .hero-full-container .hero-full-wrapper {		
          height: 70vh;		
          min-height: 70vh		
- }		
+    }		
  }
 @media (min-width:992px) {
     .container {
         width: 970px;
-        margin-top: 80px;
     }
     
     .col-md-4 {
@@ -1482,6 +1506,8 @@ blockquote.pull-right {
 .navbar-fixed-bottom .navbar-nav {
     float: left
 }
+
+
 
 @media (min-width:768px) {
     .project-nav.left .project-number {
@@ -1533,6 +1559,7 @@ blockquote.pull-right {
 		padding: 1em 0 0;
         text-align: center;
         left: 9em;
+        margin-top: -20px;
 	}
 	.demo {
 		margin: 0 0.5em;
@@ -1716,6 +1743,10 @@ blockquote.pull-right {
     .content--layout-5 .content__desc {
         margin: 560px 0px;
     }
+    h2.with-project-number {
+        font-size: 3em; 
+}
+
 }
 
 @media screen and (max-width: 28em) {
