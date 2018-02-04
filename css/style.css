@@ -1167,7 +1167,7 @@ a:focus {
 	visibility: visible;
 }
 
-
+/* worksBelow */
 
 .container-fluid {
     margin-right: auto;
@@ -1259,7 +1259,7 @@ a:focus {
 }
 
 .works_section-container {
-    padding: 20px 0;
+    padding: 20px 0 80px 0;
 }
 
 .works_section-container h3{
@@ -1351,11 +1351,23 @@ blockquote.pull-right {
     float: right!important
 }
 
-/* worksBelow */
+.navbar-fixed-bottom .navbar-nav {
+    float: left
+}
+
+@media (min-width: 768px) {
+    .navbar-nav>li {
+        float: left;
+    }
+
+    .navbar-fixed-bottom .navbar-right {
+        margin-right: 0;
+    }
+}
 
 .navbar {
     position: relative;
-    min-height: 70px;
+    min-height: 48px;
     margin-bottom: 32px;
     border: 1px solid transparent
 }
@@ -1415,6 +1427,10 @@ blockquote.pull-right {
     color: #777;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+    color: var(--link-text-hover);
+}
+
 .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1424,10 +1440,15 @@ blockquote.pull-right {
 .nav>li>a {
     padding: 10px 15px;
 }
-main.scss:186
+
 .nav>li, .nav>li>a {
     position: relative;
     display: block;
+}
+
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
 }
 
 .works_hero-full-container {
@@ -1461,10 +1482,6 @@ main.scss:186
 @media (min-width:768px) {		
     .container {		
          width: 750px		
-    }		
-    .hero-full-container .hero-full-wrapper {		
-         height: 70vh;		
-         min-height: 70vh		
     }		
  }
 @media (min-width:992px) {
@@ -1502,12 +1519,6 @@ main.scss:186
     float: left;
     margin: 0
 }
-
-.navbar-fixed-bottom .navbar-nav {
-    float: left
-}
-
-
 
 @media (min-width:768px) {
     .project-nav.left .project-number {
