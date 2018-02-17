@@ -1363,6 +1363,7 @@ blockquote.pull-right {
     .navbar-fixed-bottom .navbar-right {
         margin-right: 0;
     }
+
 }
 
 .navbar {
@@ -1661,6 +1662,9 @@ blockquote.pull-right {
 		flex-direction: column;
 		height: auto;
 	}
+    .none {
+        display: none;
+    }
 }
 @media screen and (max-width: 40em) {
 	.content--layout {
