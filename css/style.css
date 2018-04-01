@@ -911,7 +911,7 @@ a:focus {
 }
 
 .js .blogGrid {
-	background: url(../img/loading.gif) no-repeat 50% 100px;
+	background: url(../img/loading.gif) no-repeat 50% 10px;
 }
 
 .js .blogGrid.loaded {
