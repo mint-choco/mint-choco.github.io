@@ -904,7 +904,7 @@ a:focus {
 
 
 .blogGrid {
-	margin: 30px auto;
+	margin: 80px auto;
 	padding: 0;
 	list-style: none;
 	min-height: 500px;
@@ -968,7 +968,7 @@ a:focus {
 	position: relative;
 	overflow: hidden;
 	margin: 7px;
-    margin-top: 96px;
+    margin-top: 20px;
 }
 
 /* Curtain element */
