@@ -46,6 +46,10 @@ a {
 	outline: none;
 }
 
+.gray {
+    color: #ADB5BD;
+}
+
 a:hover,
 a:focus {
 	color: #333;
@@ -1270,6 +1274,8 @@ a:focus {
 
 .works_section-container p{
     color: #ADB5BD;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 .works_section-container-spacer {
@@ -1280,7 +1286,7 @@ a:focus {
 h2.with-project-number {
     position: relative;
     z-index: 1;
-    font-size: 7em; 
+    font-size: 8em; 
 }
 
 .h2.with-project-number .project-number,
@@ -1288,15 +1294,19 @@ h2.with-project-number .project-number {
     top: -5rem
 }
 
-.project-number {
-    color: #e6e6e6;
+h3.project-number {
+    color: #FFF;
     font-size: 3em;
-    position: absolute;
+    position: relative;
     width: 100%;
-    text-align: center;
     left: 0;
-    z-index: -1;
-    font-weight: 300
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.listText {
+    font-size: 1.3em;
+    line-height: 1.6em;
 }
 
 .project-nav {
@@ -1482,12 +1492,12 @@ blockquote.pull-right {
 
 @media (min-width:768px) {		
     .container {		
-         width: 750px		
+         width: 720px		
     }		
  }
 @media (min-width:992px) {
     .container {
-        width: 970px;
+        width: 960px;
     }
     
     .col-md-4 {
@@ -1497,7 +1507,7 @@ blockquote.pull-right {
 
 @media (min-width:1200px) {
     .container {
-        width: 1170px
+        width: 1024px
     }
 }
 
@@ -1763,7 +1773,16 @@ blockquote.pull-right {
     h2.with-project-number {
         font-size: 3em; 
 }
-
+    h3.project-number {
+        font-size: 2em;
+    }
+    .works_section-container p {
+        font-size: 1em;
+    }
+    .listText {
+        font-size: 1.1em;
+        line-height: 1.5em;
+}
 }
 
 @media screen and (max-width: 28em) {
