@@ -1541,6 +1541,9 @@ blockquote.pull-right {
 
 
 @media screen and (max-width: 60em) {
+    .works_hero-full-container {
+        height: 40vh;
+    }
     .content__desc {
         width: 20em;    
     }    
