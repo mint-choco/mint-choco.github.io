@@ -909,7 +909,7 @@ a:focus {
 }
 
 .js .blogGrid {
-	background: url(../img/loading.gif) no-repeat 50% 10px;
+	background: url(../img/loading.svg) no-repeat 50% 10px;
 }
 
 .js .blogGrid.loaded {
